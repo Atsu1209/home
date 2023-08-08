@@ -1,4 +1,3 @@
-# Home
 Welcome to Atsu1209Pages!
 
 Atsu1209の適当なページです。
