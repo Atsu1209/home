@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+      <meta name="description" content="中学生のプログラマー">
+        <title>Aka2GameCrafters</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+    <link rel="icon" href="https://2.bp.blogspot.com/-Gp2_6OZJ1FQ/XASwZmJF9yI/AAAAAAABQZ0/C8dUDl0e_uEWbDjvwNAo8DArlJX4vIaFwCLcBGAs/s800/computer_programming_man.png">
+    </head>
+   <body class="body">
+      <div class="fade-h">
+      <div id="home" class="big-bg">
+        <h2 class="headtext">Atsu1209</h2>
+        <ul class="main-nav">
+          <li class="about">About</li>
+          <li class="game">制作中</li>
+        </ul>
+     <div class="home-content wrapper">
+        <h2 class="page-title">Atsu1209</h2>
+       <p class="ppp">JuniorHighSchool</p> 
+       <p class="ppp">中学生暇人プログラマー</p>
+        
+        <a class="button" href="https://zi-ji-shao-jie.aka2team.repl.co/">ブログはこちら</a>
+      </div>
+      </div>
+      </div>
+     
+      <div class="aka-about">
+      <h3 class="aboutback">About</h3>
+      <h5 class="abtx">中学生が暇すぎてコード書いてます。</h5>
+      <h5 class="abtx">ブログは上のボタンから!</h5>
+      </div>
+    <h3 class="aboutback">制作中</h3>
+      <ul class="gamelist">
+        
+      </ul>
+    
+    <footer class="foot">
+      <address>Copyright(C)2023-Atsu1209 All Rights Reserved.</address>
+    </footer>
+   </body>  
+
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $(".page-title").fadeIn(1500);
+      $(".ppp").fadeIn(1500);
+      $(".button").hover(
+        function(){
+          $(".button").html("Atsu1209のブログへ");
+      },
+      function(){
+        $(".button").html("ブログはこちら");
+      });
+     
+     
+      $(".about").hover(
+        function(){
+          $(".about").css("text-decoration","underline");
+        },
+        function(){
+          $(".about").css("text-decoration","none");
+        });
+       $(".game").hover(
+        function(){
+          $(".game").css("text-decoration","underline");
+        },
+        function(){
+          $(".game").css("text-decoration","none");
+        });
+    });
+    
+  </script>
+<style>
+ .game-one{
+   font-size: 30px;
+ }
+  .headtext{
+    background-color: #b0c4de;
+    color: #00ff00;
+  }
+  .body{
+    background-color: #ffdead;
+  }
+  .main-nav {
+  display: flex;
+  text-transform: uppercase;
+  margin-top: 0px;
+  padding-top: 0px;
+  list-style: none;
+  background-color: #ffc0fb;
+}
+.main-nav li {
+  margin-left: 36px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+  .home-content {
+  text-align: center;
+  margin-top: 10%;
+}
+.home-content p {
+  font-size: 1.125rem;
+  margin: 10px 0 42px;
+  color: white;
+  display: none;
+}
+.page-title {
+  font-size: 5rem;
+  font-family: "Philosopher", serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: white;
+  display: none;
+}
+
+.button {
+  font-size: 1.375rem;
+  background: #0bd;
+  color: #fff;
+  border-radius: 5px;
+  padding: 18px 32px;
+}
+
+.button:hover {
+  background: #0090aa;
+}
+  .big-bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#home {
+  background-image: url(https://2.bp.blogspot.com/-Gp2_6OZJ1FQ/XASwZmJF9yI/AAAAAAABQZ0/C8dUDl0e_uEWbDjvwNAo8DArlJX4vIaFwCLcBGAs/s800/computer_programming_man.png);
+  min-height: 95vh;
+}
+#home .page-title {
+  text-transform: none;
+}
+.aboutback{
+  background-color: #ffc0fb;
+  color: white;
+}
+.foot{
+  background-color: #808080;
+  text-align: center;
+}
+.about{
+  font-size: 1.25rem;
+} 
+.game{
+  font-size: 1.25rem;
+} 
+ 
+</style>
+</html>
