@@ -14,7 +14,7 @@
         <h2 class="headtext">Atsu1209</h2>
         <ul class="main-nav">
           <li class="about">About</li>
-          <li class="game">制作中</li>
+          <li class="game">制作物</li>
         </ul>
      <div class="home-content wrapper">
         <h2 class="page-title">Atsu1209</h2>
@@ -31,9 +31,9 @@
       <h5 class="abtx">中学生が暇すぎてコード書いてます。</h5>
       <h5 class="abtx">ブログは上のボタンから!</h5>
       </div>
-    <h3 class="aboutback">制作中</h3>
+    <h3 class="aboutback">制作物</h3>
       <ul class="gamelist">
-        
+        <li><a href="https://atsu1209.github.io/math.html" class="math">電卓</a></li>
       </ul>
     
     <footer class="foot">
@@ -53,7 +53,16 @@
       function(){
         $(".button").html("ブログはこちら");
       });
-     
+      $(".math").hover(
+          function(){
+              $(".math").html("作品を見る");
+              $(".math").css("color","#191970");
+          },
+      function(){
+          $(".math").html("電卓");
+          $(".math").css("color","#00bfff");
+      }
+      );
      
       $(".about").hover(
         function(){
@@ -73,7 +82,7 @@
     
   </script>
 <style>
- .game-one{
+ .math{
    font-size: 30px;
  }
   .headtext{
