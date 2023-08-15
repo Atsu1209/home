@@ -1,8 +1,6 @@
 Welcome to Atsu1209Pages!
 
 Atsu1209の適当なページです。
-
 Atsu1209については
-https://6465b338b2d76.site123.me/
-
-を見てください。　僕のブログです。
+https://atsu1209.github.io/home
+を見てください。
