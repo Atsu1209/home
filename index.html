@@ -38,11 +38,13 @@
                <li>2023/8/5:電卓を追加しました</li>
                <li>2023/8/20:電卓に機能を追加しました。</li>
                <li>2023/9/5:電卓にキーボード機能を追加しました。</li>
+               <li>2023/9/5:タイマーを追加しました。</li>
            </ul>
        </div>
     <h3 class="aboutback">制作物</h3>
       <ul class="gamelist">
         <li><a href="https://atsu1209.github.io/home/math.html" class="math">電卓</a></li>
+        <li><a href="https://atsu1209.github.io/home/timer.html" class="time">タイマー</a></li>
       </ul>
     
     <footer class="foot">
@@ -70,6 +72,16 @@
       function(){
           $(".math").html("電卓");
           $(".math").css("color","#00bfff");
+      }
+      );
+        $(".time").hover(
+          function(){
+              $(".time").html("作品を見る");
+              $(".time").css("color","#191970");
+          },
+      function(){
+          $(".time").html("タイマー");
+          $(".time").css("color","#00bfff");
       }
       );
      
