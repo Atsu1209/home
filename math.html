@@ -9,34 +9,34 @@
   </head>
    <body>
       <div class="num">
-     <button onclick="insertText1()" class="btn">1</button>
-     <button onclick="insertText2()" class="btn">2</button>
-     <button onclick="insertText3()" class="btn">3</button>
-     <button onclick="insertTextp()" class="btn">＋</button>
-         <button onclick="back()" class="btn">⇐</button>
+     <button id="button1" onclick="insertText1()" class="btn">1</button>
+     <button id="button2" onclick="insertText2()" class="btn">2</button>
+     <button id="button3" onclick="insertText3()" class="btn">3</button>
+     <button id="buttonp" onclick="insertTextp()" class="btn">＋</button>
+         <button id="bs"onclick="back()" class="btn">⇐</button>
      <div class="down">
-     <button onclick="insertText4()" class="btn">4</button>
-     <button onclick="insertText5()"class="btn">5</button>
-     <button onclick="insertText6()"class="btn">6</button>
-     <button onclick="insertTextm()"class="btn">ー</button>
-       <button onclick="nomuch()" class="btn">NM</button>
+     <button id="button4"onclick="insertText4()" class="btn">4</button>
+     <button id="button5"onclick="insertText5()"class="btn">5</button>
+     <button id="button6"onclick="insertText6()"class="btn">6</button>
+     <button id="button-"onclick="insertTextm()"class="btn">ー</button>
+       <button id="buttonnm"onclick="nomuch()" class="btn">NM</button>
    </div>
-   <button onclick="insertText7()"class="btn">7</button>
-   <button onclick="insertText8()"class="btn">8</button>
-   <button onclick="insertText9()"class="btn">9</button>
-   <button onclick="insertTextk()"class="btn">✕</button>
-        <button onclick="ac()" class="btn">AC</button>
+   <button id="button7"onclick="insertText7()"class="btn">7</button>
+   <button id="button8"onclick="insertText8()"class="btn">8</button>
+   <button id="button9"onclick="insertText9()"class="btn">9</button>
+   <button id="button:"onclick="insertTextk()"class="btn">✕</button>
+        <button id="buttonclear"onclick="ac()" class="btn">AC</button>
      <div class="down">
-   <button onclick="insertText00()"class="btn">00</button>
-   <button onclick="insertText0()"class="btn">0</button>
-   <button onclick="insertTextin()"class="btn">.</button>
-   <button onclick="insertTextsl()"class="btn">÷</button>
-   <button class="btn"onclick="calculate()">=</button>
+   <button id="button00"onclick="insertText00()"class="btn">00</button>
+   <button id="button0"onclick="insertText0()"class="btn">0</button>
+   <button id="button."onclick="insertTextin()"class="btn">.</button>
+   <button id="button/"onclick="insertTextsl()"class="btn">÷</button>
+   <button id="button="class="btn"onclick="calculate()">=</button>
      </div>
       </div>
      <textarea id="myTextarea"></textarea>
       <div class="red-text" id="result"></div>     
-     </body>
+   </body>
   <script>
   function insertText1() {
   var textarea = document.getElementById("myTextarea");
@@ -213,7 +213,130 @@ function insertText4() {
         textarea.value = newValue;
       }
     }
+    document.addEventListener("keydown", function(event) {
+    if (event.key === "1") {
+        var button = document.getElementById("button1");
+        button.click();
+    }
+});
+    document.addEventListener("keydown", function(event) {
+    if (event.key === "2") {
+        var button = document.getElementById("button2");
+        button.click();
+    }
+});
+    document.addEventListener("keydown", function(event) {
+    if (event.key === "3") {
+        var button = document.getElementById("button3");
+        button.click();
+    }
+});
+    document.addEventListener("keydown", function(event) {
+    if (event.key === ";") {
+        var button = document.getElementById("buttonp");
+        button.click();
+    }
+});
+    document.addEventListener("keydown", function(event) {
+    if (event.key === "4") {
+        var button = document.getElementById("button4");
+        button.click();
+    }
+});
+    document.addEventListener("keydown", function(event) {
+    if (event.key === "5") {
+        var button = document.getElementById("button5");
+        button.click();
+    }
+});
+    document.addEventListener("keydown", function(event) {
+    if (event.key === "6") {
+        var button = document.getElementById("button6");
+        button.click();
+    }
+});
+    document.addEventListener("keydown", function(event) {
+    if (event.key === "-") {
+        var button = document.getElementById("button-");
+        button.click();
+    }
+});
+   document.addEventListener("keydown", function(event) {
+    if (event.key === "@") {
+        var button = document.getElementById("buttonnm");
+        button.click();
+    }
+}); 
+    document.addEventListener("keydown", function(event) {
+    if (event.key === "7") {
+        var button = document.getElementById("button7");
+        button.click();
+    }
+});
+    document.addEventListener("keydown", function(event) {
+    if (event.key === "8") {
+        var button = document.getElementById("button8");
+        button.click();
+    }
+});
+    document.addEventListener("keydown", function(event) {
+    if (event.key === "9") {
+        var button = document.getElementById("button9");
+        button.click();
+    }
+});
+    document.addEventListener("keydown", function(event) {
+    if (event.key === ":") {
+        var button = document.getElementById("button:");
+        button.click();
+    }
+});
+    document.addEventListener("keydown", function(event) {
+    if (event.key === "C") {
+        var button = document.getElementById("buttonclear");
+        button.click();
+    }
+});
+    document.addEventListener("keydown", function(event) {
+    if (event.key === "#") {
+        var button = document.getElementById("button00");
+        button.click();
+    }
+});
+    document.addEventListener("keydown", function(event) {
+    if (event.key === "0") {
+        var button = document.getElementById("button0");
+        button.click();
+    }
+});
+    document.addEventListener("keydown", function(event) {
+    if (event.key === ".") {
+        var button = document.getElementById("button.");
+        button.click();
+    }
+});
+    document.addEventListener("keydown", function(event) {
+    if (event.key === "/") {
+        var button = document.getElementById("button/");
+        button.click();
+    }
+});
+    document.addEventListener("keydown", function(event) {
+    if (event.key === "=") {
+        var button = document.getElementById("button=");
+        button.click();
+    }
+});
+    document.addEventListener("keydown", function(event) {
+    if (event.key === ",") {
+        var button = document.getElementById("bs");
+        button.click();
+    }
+});
+    
+    
   </script>    
+
   <style>  
     body .down {
        margin: 3px; 
