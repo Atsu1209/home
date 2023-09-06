@@ -1,123 +1,210 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-      <meta name="description" content="中学生のプログラマー">
-        <title>Atsu1209</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="中学生のプログラマー">
+    <title>Atsu1209</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="Atsu1209.png">
-    </head>
-   <body class="body">
-      <div class="fade-h">
-      <div id="home" class="big-bg">
+</head>
+<body class="body">
+<div class="fade-h">
+    <div id="home" class="big-bg">
         <h2 class="headtext">Atsu1209</h2>
         <ul class="main-nav">
-          <li class="about">About</li>
-          <li class="game">制作物</li>
+            <li id="about" class="about">About</li>
+            <li class="mess">お知らせ</li>
+            <li class="game" id="lic">制作物</li>
+            <li class="sili">リンク</li>
         </ul>
-     <div class="home-content wrapper">
-        <h2 class="page-title">Atsu1209</h2>
-       <p class="ppp">JuniorHighSchool</p> 
-       <p class="ppp">中学生暇人プログラマー</p>
-        
-        <a class="button" href="#">ブログ改装中</a>
-      </div>
-      </div>
-      </div>
-     
-      <div class="aka-about">
-      <h3 class="aboutback">About</h3>
-      <h5 class="abtx">中学生が暇すぎてコード書いてます。</h5>
-      <h5 class="abtx">ブログは上のボタンから!</h5>
-      </div>
-       <div class="Mes">
-       <h3 class="aboutback">お知らせ</h3>
-           <ul>
-               <li>2023/8/1:Atsu1209HPを開設</li>
-               <li>2023/8/5:電卓を追加しました</li>
-               <li>2023/8/20:電卓に機能を追加しました。</li>
-               <li>2023/9/5:電卓にキーボード機能を追加しました。</li>
-               <li>2023/9/5:タイマーを追加しました。</li>
-           </ul>
-       </div>
+        <div class="home-content wrapper">
+            <h2 class="page-title">Atsu1209</h2>
+            <p class="ppp">JuniorHighSchool</p>
+            <p class="ppp">中学生自称プログラマー</p>
+            <a class="button" onclick="cl()">制作物を見る</a>
+        </div>
+    </div>
+</div>
+
+<div class="aka-about">
+    <h3 class="aboutback">About</h3>
+    <h5 class="abtx">どうも Atsu1209です</h5>
+    <h5 class="abtx">現役の中学生で、自称フロントエンドエンジニアです。</h5>
+    <h5 class="abtx">得意言語はHTML,JS,CSSです。</h5>
+    <h5 class="abtx">たまにHP更新するのでよろしくです。</h5>
+</div>
+<div class="Mes">
+    <h3 class="aboutback">お知らせ</h3>
+    <ul>
+        <div class="white">
+            <li>現在時刻</li>
+            <li><div id="date" class="white"></div></li>
+        </div>
+        <li>2023/8/1:Atsu1209HPを開設</li>
+        <li>2023/8/5:制作物に電卓を追加しました</li>
+        <li>2023/8/20:電卓に機能を追加しました。</li>
+        <li>2023/9/5:電卓にキーボード機能を追加しました。</li>
+        <li>2023/9/5:制作物にタイマーを追加しました。</li>
+        <li>2023/9/6:お知らせを追加しました。</li>
+        <li>2023/9/6:お知らせに現在時刻表示機能を追加しました。</li>
+        <li>2023/9/6:メニューのスクロール機能を追加しました。</li>
+        <li>2023/9/6:リンクを追加しました。</li>
+        <li>2023/9/6:ページのデザインを変更しました。</li>
+    </ul>
+</div>
+<div class="gamelist">
     <h3 class="aboutback">制作物</h3>
-      <ul class="gamelist">
+    <ul class="gamelist">
         <li><a href="https://atsu1209.github.io/home/math.html" class="math">電卓</a></li>
         <li><a href="https://atsu1209.github.io/home/timer.html" class="time">タイマー</a></li>
-      </ul>
-    
+    </ul>
+</div>
+    <div class="site">
+        <h3 class="aboutback">リンク</h3>
+        <ul>
+            <li><a href="https://qiita.com/Atsu1209jp" class="qiita">Qiita</a></li>
+        </ul>
+    </div>
+<div class="footer">
     <footer class="foot">
-      <address>Copyright(C)2023-Atsu1209 All Rights Reserved.</address>
-    </footer>
-   </body>  
+    <address>Copyright(C)2023-Atsu1209 All Rights Reserved.</address>
+        <p>Atsu1209-HomePage/Japan</p>
+</footer>
+    </div>
+</body>
 
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script>
-    $(function(){
-      $(".page-title").fadeIn(1500);
-      $(".ppp").fadeIn(1500);
-      $(".button").hover(
-        function(){
-          $(".button").html("ブログ改装中");
-      },
-      function(){
-        $(".button").html("ブログ改装中");
-      });
-      $(".math").hover(
-          function(){
-              $(".math").html("作品を見る");
-              $(".math").css("color","#191970");
-          },
-      function(){
-          $(".math").html("電卓");
-          $(".math").css("color","#00bfff");
-      }
-      );
-        $(".time").hover(
-          function(){
-              $(".time").html("作品を見る");
-              $(".time").css("color","#191970");
-          },
-      function(){
-          $(".time").html("タイマー");
-          $(".time").css("color","#00bfff");
-      }
-      );
-     
-      $(".about").hover(
-        function(){
-          $(".about").css("text-decoration","underline");
-        },
-        function(){
-          $(".about").css("text-decoration","none");
-        });
-       $(".game").hover(
-        function(){
-          $(".game").css("text-decoration","underline");
-        },
-        function(){
-          $(".game").css("text-decoration","none");
-        });
-    });
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+   function cl(){
+       var about = document.getElementById("lic");
+       about.click();
+   }
     
-  </script>
+    $(document).ready(function() {
+        $(".page-title").fadeIn(2500);
+        $(".ppp").fadeIn(4500);
+        $(".button").hover(
+            function(){
+                $(".button").html("制作物を見る");
+            },
+            function(){
+                $(".button").html("制作物を見る");
+            });
+        $(".math").hover(
+            function(){
+                
+                $(".math").css("color","#191970");
+            },
+            function(){
+             
+                $(".math").css("color","#00bfff");
+            }
+        );
+        $(".time").hover(
+            function(){
+              
+                $(".time").css("color","#191970");
+            },
+            function(){
+       
+                $(".time").css("color","#00bfff");
+            }
+        );
+
+        $(".about").hover(
+            function(){
+                $(".about").css("text-decoration","underline");
+            },
+            function(){
+                $(".about").css("text-decoration","none");
+            });
+        $(".game").hover(
+            function(){
+                $(".game").css("text-decoration","underline");
+            },
+            function(){
+                $(".game").css("text-decoration","none");
+            });
+         $(".mess").hover(
+            function(){
+                $(".mess").css("text-decoration","underline");
+            },
+            function(){
+                $(".mess").css("text-decoration","none");
+            });
+        $(".qiita").hover(
+            function(){
+              
+                $(".qiita").css("color","#191970");
+            },
+            function(){
+       
+                $(".qiita").css("color","#00bfff");
+            }
+        );
+        $(".sili").hover(
+            function(){
+                $(".sili").css("text-decoration","underline");
+            },
+            function(){
+                $(".sili").css("text-decoration","none");
+            });
+
+        $(".about").click(function() {
+            
+            $("html, body").animate({
+                scrollTop: $(".aka-about").offset().top
+            }, 1000); 
+
+            return false;
+        });
+        $(".game").click(function() {
+            
+            $("html, body").animate({
+                scrollTop: $(".gamelist").offset().top
+            }, 1000); 
+           
+            return false;
+        });
+         $(".mess").click(function() {
+            
+            $("html, body").animate({
+                scrollTop: $(".Mes").offset().top
+            }, 1000); 
+           
+            return false;
+        });
+        $(".sili").click(function() {
+            
+            $("html, body").animate({
+                scrollTop: $(".site").offset().top
+            }, 1000); 
+           
+            return false;
+        });
+        setInterval(() => {
+      $("#date").text(new Date().toLocaleString());
+         },1)
+       
+    });
+</script>
 <style>
- .math{
+    .math{
    font-size: 30px;
  }
 .time{
    font-size: 30px;
  }
   .headtext{
-    background-color: #b0c4de;
-    color: #00ff00;
+    background-color: #abff2f;
+    color: #1e90ff;
   }
   .body{
     background-color: #ffdead;
   }
   .main-nav {
-  display: flex;
+   display: flex;
   text-transform: uppercase;
   margin-top: 0px;
   padding-top: 0px;
@@ -136,7 +223,7 @@
 .home-content p {
   font-size: 1.125rem;
   margin: 10px 0 42px;
-  color: white;
+  color: blue;
   display: none;
 }
 .page-title {
@@ -144,7 +231,7 @@
   font-family: "Philosopher", serif;
   text-transform: uppercase;
   font-weight: normal;
-  color: white;
+  color: blue;
   display: none;
 }
 
@@ -166,8 +253,8 @@
 }
 
 #home {
-  background-image: url(https://2.bp.blogspot.com/-Gp2_6OZJ1FQ/XASwZmJF9yI/AAAAAAABQZ0/C8dUDl0e_uEWbDjvwNAo8DArlJX4vIaFwCLcBGAs/s800/computer_programming_man.png);
-  min-height: 95vh;
+  background-image: url(https://s3-ap-northeast-1.amazonaws.com/qiita-image-store/0/3374328/46bd0bf1f62fab1b9d2883c5439fef40b01b9590/x_large.png?1685413809);
+  min-height: 100vh;
 }
 #home .page-title {
   text-transform: none;
@@ -186,6 +273,23 @@
 .game{
   font-size: 1.25rem;
 } 
- 
+.mess{
+   font-size: 1.25rem;
+}        
+.Mes{
+    color: green;
+    }
+.qiita{
+     font-size: 30px;    
+    }
+.sili{
+    font-size: 1.25rem;
+    }    
+    .footer {
+  background-color: #2f5167;
+  color: #fff;
+  height: 120px;
+  padding: 40px;
+}
 </style>
 </html>
