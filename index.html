@@ -14,13 +14,14 @@
         <h2 class="headtext">Atsu1209</h2>
         <ul class="main-nav">
             <li id="about" class="about">About</li>
-            <li class="mess">お知らせ</li>
+            <li class="mess">タイムライン</li>
+            <li class="haihu">配布物</li>
             <li class="game" id="lic">制作物</li>
             <li class="sili">リンク</li>
         </ul>
         <div class="home-content wrapper">
             <h2 class="page-title">Atsu1209</h2>
-            <p class="ppp">JuniorHighSchool</p>
+            <p class="ppp">JuniorHighSchoolStudent</p>
             <p class="ppp">中学生自称プログラマー</p>
             <a class="button" onclick="cl()">制作物を見る</a>
         </div>
@@ -32,10 +33,14 @@
     <h5 class="abtx">どうも Atsu1209です</h5>
     <h5 class="abtx">現役の中学生で、自称フロントエンドエンジニアです。</h5>
     <h5 class="abtx">得意言語はHTML,JS,CSSです。</h5>
-    <h5 class="abtx">たまにHP更新するのでよろしくです。</h5>
+    <h5 class="abtx">このHPをどんどん進化させていきます!</h5>
 </div>
-<div class="Mes">
-    <h3 class="aboutback">お知らせ</h3>
+    <div class="tn">
+    <h3 class="aboutback">タイムライン</h3>
+    <p onclick="nonetime()" class="btn" id="none-time">タイムラインを表示</p>
+    
+    <div class="Mes">
+
     <ul>
         <div class="white">
             <li>現在時刻</li>
@@ -50,20 +55,43 @@
         <li>2023/9/6:お知らせに現在時刻表示機能を追加しました。</li>
         <li>2023/9/6:メニューのスクロール機能を追加しました。</li>
         <li>2023/9/6:リンクを追加しました。</li>
+        <li>2023/9/6:リンクにQiitaを追加しました。</li>
         <li>2023/9/6:ページのデザインを変更しました。</li>
+        <li>2023/9/11:配布物を追加しました。</li>
+        <li>2023/9/11:配布物にキーボードライブラリを追加しました。</li>
+        <li>2023/9/11:配布物にコメント機能追加キット初心者向けを追加しました。</li>
+        <li>2023/9/11:リンクにX(Twitter)を追加しました。</li>
+        <li>2023/9/12:お知らせをタイムラインに変更しました。</li>
+        <li>2023/9/15:配布物にjQueryEventLib(Nav向け)を追加しました。</li>
+        <li>2023/9/22:一部アニメーションや機能を変更しました。</li>
+        <li>2023/9/24:タイムラインの非表示機能を追加しました。</li>
     </ul>
 </div>
-<div class="gamelist">
+    </div>
+    <div class="file">
+        <h3 class="aboutback">配布物</h3>
+        <ul>
+                
+            <li><a href="" class="keylib" id="ce">キーボードライブラリ[制作中]</a></li>
+            <li><a href="" class="comment" id="ce">コメント機能追加キット[制作中]</a></li>
+            <li><a href="" class="EventLib" id="ce">jQueryEventLib(Nav向け)[制作中]</a></li>
+            <li><a href="" class="scs" id="ce">スクロールスライドインキット[制作中]</a></li>
+        </ul>
+    </div>
+    <div class="gamelist">
     <h3 class="aboutback">制作物</h3>
     <ul class="gamelist">
-        <li><a href="https://atsu1209.github.io/home/math.html" class="math">電卓</a></li>
-        <li><a href="https://atsu1209.github.io/home/timer.html" class="time">タイマー</a></li>
+        <li><a id="ce" href="https://atsu1209.github.io/home/math.html" class="math">電卓</a></li>
+        <li><a id="ce" href="https://atsu1209.github.io/home/timer.html" class="time">タイマー</a></li>
     </ul>
 </div>
+  
     <div class="site">
         <h3 class="aboutback">リンク</h3>
         <ul>
-            <li><a href="https://qiita.com/Atsu1209jp" class="qiita">Qiita</a></li>
+            <li><a id="ce" href="https://qiita.com/Atsu1209jp" class="qiita">Qiita</a></li>
+            <li><a id="ce" href="https://twitter.com/jp62527629" class="x">X(Twitter)</a></li>
+               <li><a id="ce" href="https://replit.com/@219e220024" class="repl">Replit</a></li>
         </ul>
     </div>
 <div class="footer">
@@ -72,25 +100,63 @@
         <p>Atsu1209-HomePage/Japan</p>
 </footer>
     </div>
+    
+    
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-   function cl(){
+  let tn = 2;
+      function nonetime(){
+          
+          tn = tn + 1;
+          
+         if(tn == 2){
+        $(".Mes").fadeOut(300); 
+        $("#none-time").html("タイムラインを表示");
+         
+        };
+        
+        if (tn == 3){
+           $(".Mes").fadeIn(300);
+           $("#none-time").html("タイムラインを非表示");
+            tn = 1;
+        };
+    } 
+
+    
+    function cl(){
        var about = document.getElementById("lic");
        about.click();
    }
     
     $(document).ready(function() {
         $(".page-title").fadeIn(2500);
-        $(".ppp").fadeIn(4500);
-        $(".button").hover(
+        $(".ppp").fadeIn(3800);
+        $(".button").slideDown(1500);
+            
+            
+         $(".scs").hover(
             function(){
-                $(".button").html("制作物を見る");
+                
+                $(".scs").css("color","#191970");
             },
             function(){
-                $(".button").html("制作物を見る");
-            });
+             
+                $(".scs").css("color","#00bfff");
+            }
+        );       
+               $(".repl").hover(
+            function(){
+                
+                $(".repl").css("color","#191970");
+            },
+            function(){
+             
+                $(".repl").css("color","#00bfff");
+            }
+        );      
+           
         $(".math").hover(
             function(){
                 
@@ -112,6 +178,7 @@
             }
         );
 
+       
         $(".about").hover(
             function(){
                 $(".about").css("text-decoration","underline");
@@ -150,52 +217,225 @@
             function(){
                 $(".sili").css("text-decoration","none");
             });
+        
+         $(".haihu").hover(
+            function(){
+                $(".haihu").css("text-decoration","underline");
+            },
+            function(){
+                $(".haihu").css("text-decoration","none");
+            });  
+        
+        $(".keylib").hover(
+            function(){
+                
+                $(".keylib").css("color","#191970");
+            },
+            function(){
+             
+                $(".keylib").css("color","#00bfff");
+            }
+            );
+         $(".comment").hover(
+            function(){
+                
+                $(".comment").css("color","#191970");
+            },
+            function(){
+             
+                $(".comment").css("color","#00bfff");
+            }
+            );
+        
+         $(".x").hover(
+            function(){
+                
+                $(".x").css("color","#191970");
+            },
+            function(){
+             
+                $(".x").css("color","#00bfff");
+            }
+            );
+        
+         $(".EventLib").hover(
+            function(){
+                
+                $(".EventLib").css("color","#191970");
+            },
+            function(){
+             
+                $(".EventLib").css("color","#00bfff");
+            }
+            );
+       $(".about").click(function() {
+    var windowHeight = $(window).height();
+    var elementHeight = $(".aka-about").outerHeight();
 
-        $(".about").click(function() {
-            
-            $("html, body").animate({
-                scrollTop: $(".aka-about").offset().top
-            }, 1000); 
+    var scrollTo = $(".aka-about").offset().top - (windowHeight - elementHeight) / 2;
 
-            return false;
-        });
-        $(".game").click(function() {
-            
-            $("html, body").animate({
-                scrollTop: $(".gamelist").offset().top
-            }, 1000); 
-           
-            return false;
-        });
-         $(".mess").click(function() {
-            
-            $("html, body").animate({
-                scrollTop: $(".Mes").offset().top
-            }, 1000); 
-           
-            return false;
-        });
-        $(".sili").click(function() {
-            
-            $("html, body").animate({
-                scrollTop: $(".site").offset().top
-            }, 1000); 
-           
-            return false;
-        });
+    $("html, body").animate({
+        scrollTop: scrollTo
+    }, 1000);
+});
+
+     $(".game").click(function() {
+    var windowHeight = $(window).height();
+    var elementHeight = $(".gamelist").outerHeight();
+
+    var scrollTo = $(".gamelist").offset().top - (windowHeight - elementHeight) / 2;
+
+    $("html, body").animate({
+        scrollTop: scrollTo
+    }, 1000);
+});
+
+     $(".mess").click(function() {
+    var windowHeight = $(window).height();
+    var elementHeight = $(".tn").outerHeight(); 
+
+    var scrollTo = $(".tn").offset().top - (windowHeight - elementHeight) / 2;
+
+    $("html, body").animate({
+        scrollTop: scrollTo
+    }, 1000);
+});
+
+     $(".sili").click(function() {
+    var windowHeight = $(window).height();
+    var elementHeight = $(".site").outerHeight(); 
+
+    var scrollTo = $(".site").offset().top - (windowHeight - elementHeight) / 2;
+
+    $("html, body").animate({
+        scrollTop: scrollTo
+    }, 1000);
+});
+
+        
+        $(".haihu").click(function() {
+    var windowHeight = $(window).height();
+    var elementHeight = $(".file").outerHeight();
+
+    var scrollTo = $(".file").offset().top - (windowHeight - elementHeight) / 2;
+
+    $("html, body").animate({
+        scrollTop: scrollTo
+    }, 1000);
+});
+
+       
         setInterval(() => {
       $("#date").text(new Date().toLocaleString());
          },1)
        
     });
+    $(window).scroll(function() {
+  var scrollPosition = $(window).scrollTop();
+  if (scrollPosition > 110) {
+    $(".main-nav").addClass("fixed-nav");
+  } else {
+    $(".main-nav").removeClass("fixed-nav");
+  }
+});
+$(window).scroll(function() {
+        var element = $(".aka-about");
+        var scrollPosition = $(window).scrollTop() + $(window).height();
+        var elementPosition = element.offset().top;
+        if (scrollPosition > elementPosition) {
+            element.css({
+                "opacity": "1", 
+                "transform": "translateY(0)" 
+            });
+        }
+    if (scrollPosition < elementPosition) {
+            element.css({
+                "opacity": "0", 
+                "transform": "translateY(100px)" 
+            });
+        }
+    });
+    $(window).scroll(function() {
+        var element = $(".tn");
+        var scrollPosition = $(window).scrollTop() + $(window).height();
+        var elementPosition = element.offset().top;
+        if (scrollPosition > elementPosition) {
+            element.css({
+                "opacity": "1", 
+                "transform": "translateY(0)" 
+            });
+        }
+        if (scrollPosition < elementPosition) {
+            element.css({
+                "opacity": "0", 
+                "transform": "translateY(100px)" 
+            });
+        }
+    });
+     $(window).scroll(function() {
+        var element = $(".file");
+        var scrollPosition = $(window).scrollTop() + $(window).height();
+        var elementPosition = element.offset().top;
+        if (scrollPosition > elementPosition) {
+            element.css({
+                "opacity": "1", 
+                "transform": "translateY(0)" 
+            });
+        }
+         if (scrollPosition < elementPosition) {
+            element.css({
+                "opacity": "0", 
+                "transform": "translateY(100px)" 
+            });
+        }
+    });
+    $(window).scroll(function() {
+        var element = $(".gamelist");
+        var scrollPosition = $(window).scrollTop() + $(window).height();
+        var elementPosition = element.offset().top;
+        if (scrollPosition > elementPosition) {
+            element.css({
+                "opacity": "1", 
+                "transform": "translateY(0)" 
+            });
+        }
+        if (scrollPosition < elementPosition) {
+            element.css({
+                "opacity": "0", 
+                "transform": "translateY(100px)" 
+            });
+        }
+    });
+   
+     $(window).scroll(function() {
+        var element = $(".site");
+        var scrollPosition = $(window).scrollTop() + $(window).height();
+        var elementPosition = element.offset().top;
+        if (scrollPosition > elementPosition) {
+            element.css({
+                "opacity": "1", 
+                "transform": "translateY(0)" 
+            });
+        }
+         if (scrollPosition < elementPosition) {
+            element.css({
+                "opacity": "0", 
+                "transform": "translateY(100px)" 
+            });
+        }
+    });
 </script>
 <style>
+/*ここからPCデザイン*/
     .math{
    font-size: 30px;
  }
 .time{
    font-size: 30px;
  }
+    .button{
+    display: none;
+    }
   .headtext{
     background-color: #abff2f;
     color: #1e90ff;
@@ -204,12 +444,14 @@
     background-color: #ffdead;
   }
   .main-nav {
-   display: flex;
+  display: flex;
   text-transform: uppercase;
   margin-top: 0px;
   padding-top: 0px;
   list-style: none;
   background-color: #ffc0fb;
+  width: 100%;
+  z-index: 1000;
 }
 .main-nav li {
   margin-left: 36px;
@@ -276,6 +518,9 @@
 .mess{
    font-size: 1.25rem;
 }        
+    .haihu{
+    font-size: 1.25rem;
+    }
 .Mes{
     color: green;
     }
@@ -284,12 +529,155 @@
     }
 .sili{
     font-size: 1.25rem;
-    }    
+    }
+    .keylib{
+    font-size:30px;
+    }
     .footer {
   background-color: #2f5167;
   color: #fff;
   height: 120px;
   padding: 40px;
 }
+    .comment{
+    font-size: 30px;
+    }
+    .x{
+    font-size: 30px;
+    }
+    .EventLib{
+    font-size: 30px;
+    }
+    
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255,105,212,0.5);
+}
+    .abtx{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    
+    }   
+    
+    .aboutback{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    }
+    #ce{
+     display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;   
+    }
+    .Mes{
+    display: none;
+    }
+    
+    .btn{
+    padding-left: 100px;
+    }
+    .aka-about{
+    opacity: 0; 
+    transform: translateY(100px); 
+    transition: opacity 0.5s, transform 0.5s; 
+    }
+     .tn{
+    opacity: 0; 
+    transform: translateY(100px); 
+    transition: opacity 0.5s, transform 0.5s; 
+    }
+    .file{
+    opacity: 0; 
+    transform: translateY(100px); 
+    transition: opacity 0.5s, transform 0.5s; 
+    }
+ .gamelist{
+    opacity: 0; 
+    transform: translateY(100px); 
+    transition: opacity 0.5s, transform 0.5s; 
+    }
+    .site{
+    opacity: 0; 
+    transform: translateY(100px); 
+    transition: opacity 0.5s, transform 0.5s; 
+    }
+    .scs{
+     font-size: 30px;
+    }  
+    .repl{
+      font-size: 30px;
+    }
+    /*ここまでPCデザイン*/   
+    /* ここからスマホデザイン(スマホはPCの一部変更)*/
+    @media screen and (max-width: 768px) {
+  .main-nav li {
+    margin: 10px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+   }
+  
+  .big-bg {
+    background-attachment: scroll;
+    min-height: 50vh;
+  }
+  
+  .home-content {
+    margin-top: 5%;
+  }
+  
+  .page-title {
+    font-size: 3rem;
+  }
+  
+  .ppp {
+    font-size: 1rem; 
+    margin: 5px 0 20px;
+  }
+  
+  .button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  
+  .fixed-nav {
+    background-color: rgba(255, 105, 212, 0.8);
+  }
+  
+  .aka-about,
+  .tn,
+  .file,
+  .gamelist,
+  .site {
+    opacity: 1; 
+    transform: translateY(0);
+  }
+  
+  .headtext {
+    background-color: #abff2f;
+    color: #1e90ff;
+    font-size: 2rem;
+  }
+  
+  .body {
+    background-color: #ffdead;
+  }
+  
+  .foot {
+    height: auto;
+  }
+}  
+    /*ここまでスマホデザイン*/
 </style>
 </html>
