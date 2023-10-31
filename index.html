@@ -13,23 +13,25 @@
     <header>
        <img  class="imgg" src="https://s3-ap-northeast-1.amazonaws.com/qiita-image-store/0/3374328/46bd0bf1f62fab1b9d2883c5439fef40b01b9590/x_large.png?1685413809">
         <h1>Atsu1209</h1>
-       
+
         <ul class="main-nav">
+            <li class="top">Top</li>
             <li id="about" class="about">About</li>
             <li class="mess">タイムライン</li>
-            <li class="haihu" id="lic">配布物</li>
             <li class="tubu">つぶやき</li>
+            <li class="haihu" id="lic">配布物</li>
             <li class="game" >制作物</li>
             <li class="sili">リンク</li>
+
         </ul>
     </header>
-  
+
         <div class="home-content wrapper">
             <h2 class="page-title">Atsu1209</h2>
             <p class="ppp">StedTechOrganization所属</p>
             <p class="ppp">中学生自称プログラマー</p>
-           
-            
+
+
         </div>
      <a class="button" onclick="cl()">作品を見る</a>
     </div>
@@ -44,8 +46,8 @@
 </div>
     <div class="tn">
     <h3 class="aboutback">タイムライン</h3>
-    <p onclick="nonetime()" class="btn" id="none-time">タイムラインを表示</p>
-    
+    <p onclick="nonetime()" class="bttn btn" id="none-time">タイムラインを表示</p>
+
     <div class="Mes">
 
     <ul>
@@ -73,28 +75,30 @@
         <li>2023/9/22:一部アニメーションや機能を変更しました。</li>
         <li>2023/9/24:タイムラインの非表示機能を追加しました。</li>
         <li>2023/10/13:ページデザインを大幅に変更しました。</li>
+        <li>2023/10/13:スマホ用コードを追加しました。</li>
     </ul>
 </div>
     </div>
     <div class="tb">
     <h3 class="aboutback">つぶやき</h3>
-        
+
     <div class="tubi">
 
    <ul>
-       <li>2023/10/13: キーボードライブラリの制作話をQiitaに投稿したよー</li>    
+       <li  class="tttt">2023/10/13: キーボードライブラリの制作話をQiitaに投稿したよー</li>
+       <li  class="tttt">2023/10/16: スマホ対応させたよー</li>
     </ul>
 </div>
     </div>
     <div class="file">
         <h3 class="aboutback">配布物</h3>
         <ul>
-                
+
             <li><a href="https://ux.getuploader.com/Atsufile/download/2" class="keylib" id="ce">キーボードライブラリ[Pass:Atk]</a></li>
             <li><a href="https://ux.getuploader.com/Atsufile/download/1" class="comment" id="ce">コメント機能追加キット[Pass:Atc]</a></li>
             <li><a href="" class="EventLib" id="ce">jQueryEventLib(Nav向け)[制作中]</a></li>
             <li><a href="" class="scs" id="ce">スクロールスライドインキット[制作中]</a></li>
-            <li><a href="" class="rtm" id="ce">RTM-Addon一覧(別ページへ)[制作中]</a></li>
+
         </ul>
     </div>
     <div class="gamelist">
@@ -104,13 +108,13 @@
         <li><a id="ce" href="https://atsu1209.github.io/home/timer.html" class="time">タイマー</a></li>
     </ul>
 </div>
-  
+
     <div class="site">
         <h3 class="aboutback">リンク</h3>
         <ul>
             <li><a id="ce" href="https://qiita.com/Atsu1209jp" class="qiita">Qiita</a></li>
             <li><a id="ce" href="https://twitter.com/jp62527629" class="x">X(Twitter)</a></li>
-               <li><a id="ce" href="https://replit.com/@219e220024" class="repl">Replit</a></li>
+               <li><a id="ce" href="https://scratch.mit.edu/users/Atsu1209enoki/" class="repl">Scratch</a></li>
         </ul>
     </div>
 <div class="footer">
@@ -119,26 +123,26 @@
         <p>Atsu1209-HomePage/Japan</p>
 </footer>
     </div>
-    
-    
+
+
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-  
+
     let tn = 2;
-  
-      
+
+
     function nonetime(){
-          
+
           tn = tn + 1;
-          
+
          if(tn == 2){
         $(".Mes").fadeOut(300); 
         $("#none-time").html("タイムラインを表示");
-         
+
         };
-        
+
         if (tn == 3){
            $(".Mes").fadeIn(300);
            $("#none-time").html("タイムラインを非表示");
@@ -146,61 +150,61 @@
         };
     } 
 
-   
+
     function cl(){
        var about = document.getElementById("lic");
        about.click();
    }
-    
+
     $(document).ready(function() {
-       
+
         $(".imgg").fadeIn(1500)
-            
-            
-        
+
+
+
         $(".scs").hover(
             function(){
-                
+
                 $(".scs").css("color","#191970");
             },
             function(){
-             
+
                 $(".scs").css("color","#00bfff");
             }
         );       
                $(".repl").hover(
             function(){
-                
+
                 $(".repl").css("color","#191970");
             },
             function(){
-             
+
                 $(".repl").css("color","#00bfff");
             }
         );      
-           
+
         $(".math").hover(
             function(){
-                
+
                 $(".math").css("color","#191970");
             },
             function(){
-             
+
                 $(".math").css("color","#00bfff");
             }
         );
         $(".time").hover(
             function(){
-              
+
                 $(".time").css("color","#191970");
             },
             function(){
-       
+
                 $(".time").css("color","#00bfff");
             }
         );
 
-       
+
          $(".tubu").hover(
             function(){
                 $(".tubu").css("text-decoration","underline");
@@ -208,7 +212,7 @@
             function(){
                 $(".tubu").css("text-decoration","none");
             });
-        
+
         $(".about").hover(
             function(){
                 $(".about").css("text-decoration","underline");
@@ -232,11 +236,11 @@
             });
         $(".qiita").hover(
             function(){
-              
+
                 $(".qiita").css("color","#191970");
             },
             function(){
-       
+
                 $(".qiita").css("color","#00bfff");
             }
         );
@@ -247,7 +251,7 @@
             function(){
                 $(".sili").css("text-decoration","none");
             });
-        
+
          $(".haihu").hover(
             function(){
                 $(".haihu").css("text-decoration","underline");
@@ -255,59 +259,66 @@
             function(){
                 $(".haihu").css("text-decoration","none");
             });  
-        
+
+           $(".top").hover(
+            function(){
+                $(".top").css("text-decoration","underline");
+            },
+            function(){
+                $(".top").css("text-decoration","none");
+            });        
+
+            $(".rli").hover(
+            function(){
+                $(".rli").css("text-decoration","underline");
+            },
+            function(){
+                $(".rli").css("text-decoration","none");
+            });        
+
         $(".keylib").hover(
             function(){
-                
+
                 $(".keylib").css("color","#191970");
             },
             function(){
-             
+
                 $(".keylib").css("color","#00bfff");
             }
             );
          $(".comment").hover(
             function(){
-                
+
                 $(".comment").css("color","#191970");
             },
             function(){
-             
+
                 $(".comment").css("color","#00bfff");
             }
             );
-        
+
          $(".x").hover(
             function(){
-                
+
                 $(".x").css("color","#191970");
             },
             function(){
-             
+
                 $(".x").css("color","#00bfff");
             }
             );
-        
+
          $(".EventLib").hover(
             function(){
-                
+
                 $(".EventLib").css("color","#191970");
             },
             function(){
-             
+
                 $(".EventLib").css("color","#00bfff");
             }
             );
-        $(".rtm").hover(
-            function(){
-                
-                $(".rtm").css("color","#191970");
-            },
-            function(){
-             
-                $(".rtm").css("color","#00bfff");
-            }
-        );
+
         $(".tubu").click(function() {
     var windowHeight = $(window).height();
     var elementHeight = $(".tb").outerHeight();
@@ -362,7 +373,7 @@
     }, 1000);
 });
 
-        
+
         $(".haihu").click(function() {
     var windowHeight = $(window).height();
     var elementHeight = $(".file").outerHeight();
@@ -373,12 +384,22 @@
         scrollTop: scrollTo
     }, 1000);
 });
+          $(".top").click(function() {
+    var windowHeight = $(window).height();
+    var elementHeight = $(".imgg").outerHeight();
 
-       
+    var scrollTo = $(".imgg").offset().top - (windowHeight - elementHeight) / 2;
+
+    $("html, body").animate({
+        scrollTop: scrollTo
+    }, 1000);
+});
+
+
         setInterval(() => {
       $("#date").text(new Date().toLocaleString());
          },1)
-       
+
     });
     $(window).scroll(function() {
   var scrollPosition = $(window).scrollTop();
@@ -456,7 +477,7 @@ $(window).scroll(function() {
             });
         }
     });
-   
+
      $(window).scroll(function() {
         var element = $(".site");
         var scrollPosition = $(window).scrollTop() + $(window).height();
@@ -474,7 +495,7 @@ $(window).scroll(function() {
             });
         }
     });
-    
+
     $(window).scroll(function() {
         var element = $(".tb");
         var scrollPosition = $(window).scrollTop() + $(window).height();
@@ -530,13 +551,13 @@ nav ul li a {
 .time{
    font-size: 30px;
  }
-   
+
   .headtext{
     background-color: #abff2f;
     color: #1e90ff;
   }
- 
- 
+
+
 .main-nav {
   display: flex;
   justify-content: center;
@@ -552,19 +573,7 @@ nav ul li a {
   margin: 0 20px; 
   text-align: center; 
 }
- .home-content {
-  text-align: center;
-  margin-top: 10%;
-  background: linear-gradient(90deg, #1e90ff, #00bfff, #87cefa);
-  background-size: 200% 100%;
-  animation: gradientAnimation 4s linear infinite;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  padding: 40px;
-  border-radius: 10px;
-}
+
 
 @keyframes gradientAnimation {
   0% {
@@ -579,15 +588,13 @@ nav ul li a {
   font-size: 1.125rem;
   margin: 10px 0 42px;
   color: blue;
- 
+
 }
 .page-title {
   font-size: 5rem;
-  font-family: ;
-  text-transform: uppercase;
   font-weight: normal;
   color: blue;
- 
+
 }
 
 .button {
@@ -611,7 +618,7 @@ nav ul li a {
 }
 
 #home {
- 
+
   min-height: 100vh;
   background-size: cover;
   background-position: center;
@@ -667,7 +674,7 @@ nav ul li a {
     .EventLib{
     font-size: 30px;
     }
-    
+
 .fixed-nav {
   position: fixed;
   top: 0;
@@ -681,9 +688,9 @@ nav ul li a {
     justify-content: center;
     -webkit-align-items: center;
     align-items: center;
-    
+
     }   
-    
+
     .aboutback{
     display: -webkit-flex;
     display: flex;
@@ -703,8 +710,8 @@ nav ul li a {
     .Mes{
     display: none;
     }
-    
-    .btn{
+
+    .bttn{
     padding-left: 100px;
     }
     .aka-about{
@@ -743,15 +750,14 @@ nav ul li a {
     .repl{
       font-size: 30px;
     }
-    .rtm{
-      font-size: 30px;
-    }
+
     .imgg{
        display: none;
     }
     .tubu{
-       font-size: 1.25rem;
-    }  
+       font-size:1.25rem;
+    }
+
     .tubi li{
       display: -webkit-flex;
     display: flex;
@@ -759,50 +765,57 @@ nav ul li a {
     justify-content: center;
     -webkit-align-items: center;
     align-items: center;  
-        font-size: 20px;
     }    
+    .top{
+       font-size: 1.25rem;
+    }
+    .tttt{
+       font-size: 20px;
+    }
+
 header img {
-    width: 60px; /* 画像の幅を調整 */
-    height: 60px; /* 画像の高さを調整 */
-    margin-right: 10px; /* 画像とテキスト間の間隔を調整 */
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
 }    
     /*ここまでPCデザイン*/   
-    /* ここからスマホデザイン(スマホはPCの一部変更)*/
+    /* ここからスマホデザイン*/
     @media screen and (max-width: 768px) {
   .main-nav li {
     margin: 10px 0;
     margin-left: 10px;
     margin-right: 10px;
+    font-size: 10px;
    }
-  
+
   .big-bg {
     background-attachment: scroll;
     min-height: 50vh;
   }
-  
+
   .home-content {
     margin-top: 5%;
   }
-  
+
   .page-title {
     font-size: 3rem;
   }
-  
+
   .ppp {
     font-size: 1rem; 
     margin: 5px 0 20px;
   }
-  
+
   .button {
     font-size: 1rem;
     padding: 10px 20px;
     color: #fff;
   }
-  
+
   .fixed-nav {
     background-color: rgba(255, 255, 255, 0.7);
   }
-  
+
   .aka-about,
   .tn,
   .file,
@@ -811,21 +824,40 @@ header img {
     opacity: 1; 
     transform: translateY(0);
   }
-  
+
   .headtext {
     background-color: #abff2f;
     color: #1e90ff;
     font-size: 2rem;
    }
-  
-  .body {
-    background-color: #ffdead;
-  }
-  
+
   .foot {
     height: auto;
   }
+ #ce{
+     font-size: 15px;
+ }
+ .abtx{
+    font-size: 15px;       
+ }
+ .tttt{
+    font-size: 11px;       
+ }
 }  
     /*ここまでスマホデザイン*/
+     .home-content {
+  text-align: center;
+  margin-top: 10%;
+  background: linear-gradient(90deg, #1e90ff, #00bfff, #87cefa);
+  background-size: 200% 100%;
+  animation: gradientAnimation 4s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  padding: 40px;
+  border-radius: 10px;
+}
+    /*もろもろデザイン*?
 </style>
 </html>
