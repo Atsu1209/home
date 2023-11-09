@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="Atsu1209.png">
+    <link href= "https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"> </script> 
 </head>
 <body class="body">
 <div class="fade-h">
@@ -17,11 +19,11 @@
         <ul class="main-nav">
             <li class="top">Top</li>
             <li id="about" class="about">About</li>
-            <li class="mess">タイムライン</li>
             <li class="tubu">つぶやき</li>
             <li class="haihu" id="lic">配布物</li>
             <li class="game" >制作物</li>
             <li class="sili">リンク</li>
+            <li class="mess">タイムライン</li>
 
         </ul>
     </header>
@@ -44,41 +46,7 @@
     <h5 class="abtx">得意言語はHTML,JS,CSSです。</h5>
     <h5 class="abtx">このHPをどんどん進化させていきます!</h5>
 </div>
-    <div class="tn">
-    <h3 class="aboutback">タイムライン</h3>
-    <p onclick="nonetime()" class="bttn btn" id="none-time">タイムラインを表示</p>
 
-    <div class="Mes">
-
-    <ul>
-        <div class="white">
-            <li>現在時刻</li>
-            <li><div id="date" class="white"></div></li>
-        </div>
-        <li>2023/8/1:Atsu1209HPを開設</li>
-        <li>2023/8/5:制作物に電卓を追加しました</li>
-        <li>2023/8/20:電卓に機能を追加しました。</li>
-        <li>2023/9/5:電卓にキーボード機能を追加しました。</li>
-        <li>2023/9/5:制作物にタイマーを追加しました。</li>
-        <li>2023/9/6:お知らせを追加しました。</li>
-        <li>2023/9/6:お知らせに現在時刻表示機能を追加しました。</li>
-        <li>2023/9/6:メニューのスクロール機能を追加しました。</li>
-        <li>2023/9/6:リンクを追加しました。</li>
-        <li>2023/9/6:リンクにQiitaを追加しました。</li>
-        <li>2023/9/6:ページのデザインを変更しました。</li>
-        <li>2023/9/11:配布物を追加しました。</li>
-        <li>2023/9/11:配布物にキーボードライブラリを追加しました。</li>
-        <li>2023/9/11:配布物にコメント機能追加キット初心者向けを追加しました。</li>
-        <li>2023/9/11:リンクにX(Twitter)を追加しました。</li>
-        <li>2023/9/12:お知らせをタイムラインに変更しました。</li>
-        <li>2023/9/15:配布物にjQueryEventLib(Nav向け)を追加しました。</li>
-        <li>2023/9/22:一部アニメーションや機能を変更しました。</li>
-        <li>2023/9/24:タイムラインの非表示機能を追加しました。</li>
-        <li>2023/10/13:ページデザインを大幅に変更しました。</li>
-        <li>2023/10/13:スマホ用コードを追加しました。</li>
-    </ul>
-</div>
-    </div>
     <div class="tb">
     <h3 class="aboutback">つぶやき</h3>
 
@@ -96,7 +64,7 @@
 
             <li><a href="https://ux.getuploader.com/Atsufile/download/2" class="keylib" id="ce">キーボードライブラリ[Pass:Atk]</a></li>
             <li><a href="https://ux.getuploader.com/Atsufile/download/1" class="comment" id="ce">コメント機能追加キット[Pass:Atc]</a></li>
-            <li><a href="" class="EventLib" id="ce">jQueryEventLib(Nav向け)[制作中]</a></li>
+            <li><a href="" class="EventLib" id="ce">EventLib(Nav向け)[制作中]</a></li>
             <li><a href="" class="scs" id="ce">スクロールスライドインキット[制作中]</a></li>
 
         </ul>
@@ -114,8 +82,71 @@
         <ul>
             <li><a id="ce" href="https://qiita.com/Atsu1209jp" class="qiita">Qiita</a></li>
             <li><a id="ce" href="https://twitter.com/jp62527629" class="x">X(Twitter)</a></li>
-               <li><a id="ce" href="https://scratch.mit.edu/users/Atsu1209enoki/" class="repl">Scratch</a></li>
+               <li><a id="ce" href="https://replit.com/@219e220024" class="repl">Replit</a></li>
         </ul>
+    </div>
+    <div class="tn">
+    <h3 class="aboutback">タイムライン</h3>
+
+     <!-- Modal Trigger -->
+    <a  id="time-btn" class="waves-effect waves-light btn darken-1 modal-trigger blue" href="#demo-modal">
+      タイムラインを開く
+    </a>
+      </div>
+     <div class="time-modal">
+
+
+
+    <!-- Modal Structure -->
+    <div id="demo-modal" class="modal" id="modal">
+      <div class="modal-content">
+        <h4>タイムライン</h4>
+          <div class="Mes">
+
+    <ul>
+
+            <li class="red">タイムライン(更新・変更 履歴)</li>
+            <div class="yellow">
+            <li class="mod-da yellow">現在時刻</li>
+            <li><div id="date" class="yellow"></div></li>
+        </div>
+        <div class="time-li">
+        <li>2023/8/1:Atsu1209HPを開設</li>
+        <li>2023/8/5:制作物に電卓を追加しました</li>
+        <li>2023/8/20:電卓に機能を追加しました。</li>
+        <li>2023/9/5:電卓にキーボード機能を追加しました。</li>
+        <li>2023/9/5:制作物にタイマーを追加しました。</li>
+        <li>2023/9/6:お知らせを追加しました。</li>
+        <li>2023/9/6:お知らせに現在時刻表示機能を追加しました。</li>
+        <li>2023/9/6:メニューのスクロール機能を追加しました。</li>
+        <li>2023/9/6:リンクを追加しました。</li>
+        <li>2023/9/6:リンクにQiitaを追加しました。</li>
+        <li>2023/9/6:ページのデザインを変更しました。</li>
+        <li>2023/9/11:配布物を追加しました。</li>
+        <li>2023/9/11:配布物にキーボードライブラリを追加しました。</li>
+        <li>2023/9/11:配布物にコメント機能追加キットを追加しました。</li>
+        <li>2023/9/11:リンクにX(Twitter)を追加しました。</li>
+        <li>2023/9/12:お知らせをタイムラインに変更しました。</li>
+        <li>2023/9/15:配布物にEventLib(Nav向け)を追加しました。</li>
+        <li>2023/9/22:一部アニメーションや機能を変更しました。</li>
+        <li>2023/9/24:タイムラインの非表示機能を追加しました。</li>
+        <li>2023/10/13:ページデザインを大幅に変更しました。</li>
+        <li>2023/10/13:スマホ用コードを追加しました。</li>
+        <li>2023/11/7:タイムラインの表示形式と位置を変更しました。</li>
+        <li>2023/11/9:スマホ用コードの一部修正をしました。</li>
+    </div>
+            </ul>
+
+              <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn lighten-1 blue">
+          閉じる
+        </a>
+
+      </div>
+</div>
+      </div>
+      </div>
+
     </div>
 <div class="footer">
     <footer class="foot">
@@ -125,33 +156,30 @@
     </div>
 
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
 
-    let tn = 2;
+
+    //タイムラインモーダル
+document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems);
+
+    });
 
 
-    function nonetime(){
-
-          tn = tn + 1;
-
-         if(tn == 2){
-        $(".Mes").fadeOut(300); 
-        $("#none-time").html("タイムラインを表示");
-
-        };
-
-        if (tn == 3){
-           $(".Mes").fadeIn(300);
-           $("#none-time").html("タイムラインを非表示");
-            tn = 1;
-        };
-    } 
 
 
-    function cl(){
+    //ここまで
+function cl(){
        var about = document.getElementById("lic");
        about.click();
    }
@@ -647,9 +675,7 @@ nav ul li a {
     .haihu{
     font-size: 1.25rem;
     }
-.Mes{
-    color: green;
-    }
+
 .qiita{
      font-size: 30px;    
     }
@@ -707,9 +733,7 @@ nav ul li a {
     -webkit-align-items: center;
     align-items: center;   
     }
-    .Mes{
-    display: none;
-    }
+
 
     .bttn{
     padding-left: 100px;
@@ -778,6 +802,14 @@ header img {
     height: 60px;
     margin-right: 10px;
 }    
+    #time-btn{
+       margin-left: 480px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .time-li li{
+       color: green;
+    }
     /*ここまでPCデザイン*/   
     /* ここからスマホデザイン*/
     @media screen and (max-width: 768px) {
@@ -843,6 +875,15 @@ header img {
  .tttt{
     font-size: 11px;       
  }
+          #time-btn{
+            margin-left: 40px;
+            
+            padding-left: 50px;
+            padding-right: 40px;
+          }
+      #time-li{
+          font-size: 5px;
+      }
 }  
     /*ここまでスマホデザイン*/
      .home-content {
