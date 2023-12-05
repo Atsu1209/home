@@ -15,11 +15,12 @@
     <header>
        <img  class="imgg" src="https://s3-ap-northeast-1.amazonaws.com/qiita-image-store/0/3374328/46bd0bf1f62fab1b9d2883c5439fef40b01b9590/x_large.png?1685413809">
         <h1>Atsu1209</h1>
+        <p class="red-text" id="Brow"></p>
 
         <ul class="main-nav">
             <li class="top">Top</li>
             <li id="about" class="about">About</li>
-            <li class="tubu">つぶやき</li>
+            <li class="tubu">ブログ</li>
             <li class="haihu" id="lic">配布物</li>
             <li class="game" >制作物</li>
             <li class="sili">リンク</li>
@@ -48,13 +49,12 @@
 </div>
 
     <div class="tb">
-    <h3 class="aboutback">つぶやき</h3>
+    <h3 class="aboutback">ブログ</h3>
 
     <div class="tubi">
 
    <ul>
-       <li  class="tttt">2023/10/13: キーボードライブラリの制作話をQiitaに投稿したよー</li>
-       <li  class="tttt">2023/10/16: スマホ対応させたよー</li>
+       <li class="blog" id="ce"><a href="https://654d73b23140c.site123.me/">ブログリンク</a></li>
     </ul>
 </div>
     </div>
@@ -152,10 +152,7 @@
     <footer class="foot">
     <address>Copyright(C)2023-Atsu1209 All Rights Reserved.</address>
         <p>Atsu1209-HomePage/Japan</p>
-</footer>
-    </div>
-
-
+        <button onclick="Copy()" class="btn">著作権に関する表示</button>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -165,7 +162,26 @@
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
+
+    <script>
+        // ページの読み込みが完了したら実行
+        $(document).ready(function(){
+            // モーダルを初期化
+            $('.modal').modal();
+        });
+    </script>
+    
+    <script>
+  
+  var userAgent = navigator.userAgent;
+
+  var targetBrowser = "Chrome";
+
+  if (userAgent.indexOf(targetBrowser) !== -1) {
+      $("#Brow").html("Chrome以外のブラウザで開くと正しく動作しない場合があります");
+      alert("Chrome以外のブラウザで開くと \n 正しく動作しない場合があります")
+  }
+        
 
 
     //タイムラインモーダル
@@ -174,12 +190,15 @@ document.addEventListener('DOMContentLoaded', function () {
       var instances = M.Modal.init(elems);
 
     });
-
-
-
+    
 
     //ここまで
-function cl(){
+function Copy(){
+
+   alert("Copyright(C)2023-Atsu1209 All Rights Reserved. \n 無断転載,改造,ソースコードのコピーを禁じる")
+    
+}
+    function cl(){
        var about = document.getElementById("lic");
        about.click();
    }
@@ -344,6 +363,16 @@ function cl(){
             function(){
 
                 $(".EventLib").css("color","#00bfff");
+            }
+            );
+         $(".blog").hover(
+            function(){
+
+                $(".blog").css("color","#191970");
+            },
+            function(){
+
+                $(".blog").css("color","#00bfff");
             }
             );
 
@@ -688,7 +717,7 @@ nav ul li a {
     .footer {
   background-color: #2f5167;
   color: #fff;
-  height: 120px;
+  height: 160px;
   padding: 40px;
 }
     .comment{
@@ -810,6 +839,9 @@ header img {
     .time-li li{
        color: green;
     }
+    .blog{
+          font-size: 30px;
+        }
     /*ここまでPCデザイン*/   
     /* ここからスマホデザイン*/
     @media screen and (max-width: 768px) {
@@ -884,6 +916,10 @@ header img {
       #time-li{
           font-size: 5px;
       }
+        .blog{
+          font-size: 15px;
+        }
+        
 }  
     /*ここまでスマホデザイン*/
      .home-content {
