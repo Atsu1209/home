@@ -164,9 +164,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <script>
-        // ページの読み込みが完了したら実行
+        
         $(document).ready(function(){
-            // モーダルを初期化
             $('.modal').modal();
         });
     </script>
@@ -177,7 +176,7 @@
 
   var targetBrowser = "Chrome";
 
-  if (userAgent.indexOf(targetBrowser) !== -1) {
+  if (userAgent.indexOf(targetBrowser) === -1) {
       $("#Brow").html("Chrome以外のブラウザで開くと正しく動作しない場合があります");
       alert("Chrome以外のブラウザで開くと \n 正しく動作しない場合があります")
   }
