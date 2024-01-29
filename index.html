@@ -21,11 +21,11 @@
         <ul class="main-nav">
             <li class="top">Top</li>
             <li id="about" class="about">About</li>
-            <li class="tubu">ブログ</li>
             <li class="haihu" id="lic">配布物</li>
             <li class="game" >制作物</li>
             <li class="sili">リンク</li>
             <li class="mess">タイムライン</li>
+            <li class="tubu">ブログ</li>
 
         </ul>
     </header>
@@ -49,16 +49,6 @@
     <h5 class="abtx">このHPをどんどん進化させていきます!</h5>
 </div>
 
-    <div class="tb">
-    <h3 class="aboutback">ブログ</h3>
-
-    <div class="tubi">
-
-   <ul>
-       <li class="blog" id="ce"><a href="https://654d73b23140c.site123.me/">ブログリンク</a></li>
-    </ul>
-</div>
-    </div>
     <div class="file">
         <h3 class="aboutback">配布物</h3>
         <ul>
@@ -75,7 +65,7 @@
     <ul class="gamelist">
         <li><a id="ce" href="https://atsu1209.github.io/home/math.html" class="math">電卓</a></li>
         <li><a id="ce" href="https://atsu1209.github.io/home/timer.html" class="time">タイマー</a></li>
-        <li><a id="ce" href="https://atsu1209.github.io/home/color.html" class="coEdit">カラーコード生成</a></li>
+        <li><a id="ce" href="" class="coEdit">カラーコード生成</a></li>
     </ul>
 </div>
 
@@ -87,6 +77,14 @@
                <li><a id="ce" href="https://replit.com/@219e220024" class="repl">Replit</a></li>
         </ul>
     </div>
+    <div class="tb">
+        <h3 class="aboutback">ブログ</h3>
+        <div class="tubi">
+            <div class="box">
+                 <h1 class="blog-title">Atsu1209ブログ移転</h1>
+                 <p class="blog-p">ブログ移転しました</p>
+                 <a class="click-btn" href="Blog/blog-made.html">詳しく見る>></a>
+             </div>
     <div class="tn">
     <h3 class="aboutback">タイムライン</h3>
 
@@ -137,6 +135,8 @@
         <li>2023/11/7:タイムラインの表示形式と位置を変更しました。</li>
         <li>2023/11/9:スマホ用コードの一部修正をしました。</li>
         <li>2023/12/22: 制作物にカラーコード生成を追加しました</li>
+        <li>2024/1/29:ブログをHPに移行しました。</li>
+        <li>2024/1/19:ブログにAtsu1209ブログ移転を追加しました</li>
     </div>
             </ul>
 
@@ -584,6 +584,28 @@ $(window).scroll(function() {
     });
 </script>
 <style>
+.box{
+        width: 500px;
+        height: 180px;
+        margin: 100px;
+        margin-left: 420px;
+        border: solid 1px #999999;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px #636363;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+    .blog-title{
+        font-size: 40px;
+        margin-left: 10px;
+        }
+        .click-btn{
+            margin-left: 10px;
+        }
+        .blog-p{
+            margin-left: 10px;
+        }
+
 header {
     background-color: white;
     color: black;
@@ -844,7 +866,7 @@ header img {
     margin-right: 10px;
 }    
     #time-btn{
-        margin-left: 770px;
+        margin-left: 480px;
         padding-left: 100px;
         padding-right: 100px;
     }
