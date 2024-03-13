@@ -71,6 +71,14 @@ function Copy(){
                 $(".top").css("text-decoration","none");
             });       
 
+    $(document).ready(function() {
+    // スマートフォンであるかどうかを判定するメディアクエリ
+    if ($(window).width() < 768) { // 768px未満の場合はスマートフォンとみなす
+        // scrollイベントハンドラを無効にする
+        $(window).off('scroll');
+    }
+});
+        
 </script>
 <style>
 .blog-date{
