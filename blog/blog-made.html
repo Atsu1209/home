@@ -43,7 +43,8 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-
+</footer>
+    </div>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -71,14 +72,6 @@ function Copy(){
                 $(".top").css("text-decoration","none");
             });       
 
-    $(document).ready(function() {
-    // スマートフォンであるかどうかを判定するメディアクエリ
-    if ($(window).width() < 768) { // 768px未満の場合はスマートフォンとみなす
-        // scrollイベントハンドラを無効にする
-        $(window).off('scroll');
-    }
-});
-        
 </script>
 <style>
 .blog-date{
@@ -209,7 +202,7 @@ nav ul li a {
   text-align: center;
 }
 
-    .footer {
+ .footer {
   background-color: #2f5167;
   color: #fff;
   height: 160px;
@@ -336,15 +329,6 @@ header img {
     .coEdit{
         font-size: 30px;
     }
-    .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #2f5167;
-    color: #fff;
-    height: 160px;
-    padding: 40px;
-}
     /*ここまでPCデザイン*/   
     /* ここからスマホデザイン*/
     @media screen and (max-width: 768px) {
