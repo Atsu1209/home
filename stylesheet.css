@@ -1,0 +1,408 @@
+.tn{
+    background-color: #d3d3d3;
+}
+    
+.site{
+    background-color: #d3d3d3;
+}
+    .file{
+    background-color: #d3d3d3;
+    margin-bottom: 5px;
+}
+.gif{
+    background-image: url("back.png");
+  background-size: 100%; /* または background-size: 100% 100%; */
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  height: 100vh; /* ウィンドウの高さいっぱいに広げるために追加 */
+  margin: 0; /* マージンをリセットして全画面に表示 */
+  padding-top: 56px;
+}
+.box{
+        width: 500px;
+        height: 180px;
+        margin: 100px;
+        margin-left: 420px;
+        border: solid 1px #999999;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px #636363;
+        margin-top: 1px;
+        margin-bottom: 5px;
+    }
+    .blog-title{
+        font-size: 40px;
+        margin-left: 10px;
+        }
+        .click-btn{
+            margin-left: 10px;
+        }
+        .blog-p{
+            margin-left: 10px;
+        }
+
+header {
+    background-color: white;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+    /*ここからPCデザイン*/
+    .math{
+   font-size: 30px;
+ }
+.time{
+   font-size: 30px;
+ }
+
+  .headtext{
+    background-color: #abff2f;
+    color: #1e90ff;
+  }
+
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  list-style: none; 
+  padding: 0;
+  width: 100%;
+  z-index: 1000;
+  text-align: center;
+}
+
+
+.main-nav li {
+  margin: 0 20px; 
+  text-align: center; 
+}
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.home-content p {
+  font-size: 1.125rem;
+  margin: 10px 0 42px;
+  color: blue;
+
+}
+.page-title {
+  font-size: 5rem;
+  font-weight: normal;
+  color: blue;
+  
+}
+
+.button {
+  font-size: 1.375rem;
+    background: #0bd;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+    display: block; 
+    margin: 0 auto; 
+    width: max-content;
+    margin-top: 0px;
+}
+
+.button:hover {
+  background: #0090aa;
+}
+  .big-bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#home {
+
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#home .page-title {
+  text-transform: none;
+}
+.aboutback{
+  background: linear-gradient(to bottom, #87cefa, #afeeee);
+  color: white;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.foot{
+  background-color: #2f5167;
+  text-align: center;
+}
+.about{
+  font-size: 1.25rem;
+} 
+.game{
+  font-size: 1.25rem;
+} 
+.mess{
+   font-size: 1.25rem;
+}        
+    .haihu{
+    font-size: 1.25rem;
+    }
+
+.qiita{
+     font-size: 30px;    
+    }
+.sili{
+    font-size: 1.25rem;
+    }
+    .keylib{
+    font-size:30px;
+    }
+    .footer {
+  background-color: #2f5167;
+  color: #fff;
+  height: 160px;
+  padding: 40px;
+}
+    .comment{
+    font-size: 30px;
+    }
+    .x{
+    font-size: 30px;
+    }
+    .EventLib{
+    font-size: 30px;
+    }
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+    .abtx{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    }   
+
+    .aboutback{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    }
+    #ce{
+     display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;   
+    }
+
+
+    .bttn{
+    padding-left: 100px;
+    }
+    .aka-about{
+    opacity: 0; 
+    transform: translateY(100px); 
+    transition: opacity 0.5s, transform 0.5s; 
+    }
+     .tn{
+    opacity: 0; 
+    transform: translateY(100px); 
+    transition: opacity 0.5s, transform 0.5s; 
+    }
+    .file{
+    opacity: 0; 
+    transform: translateY(100px); 
+    transition: opacity 0.5s, transform 0.5s; 
+
+    }
+ .gamelist{
+    opacity: 0; 
+    transform: translateY(100px); 
+    transition: opacity 0.5s, transform 0.5s; 
+    }
+    .site{
+    opacity: 0; 
+    transform: translateY(100px); 
+    transition: opacity 0.5s, transform 0.5s; 
+    }
+      .tb{
+    opacity: 0; 
+    transform: translateY(100px); 
+    transition: opacity 0.5s, transform 0.5s; 
+    }
+    .scs{
+     font-size: 30px;
+    }  
+    .repl{
+      font-size: 30px;
+    }
+
+    .imgg{
+       display: none;
+    }
+    .tubu{
+       font-size:1.25rem;
+    }
+
+    .tubi li{
+      display: -webkit-flex;
+    display: flex;
+    
+    }    
+    .top{
+       font-size: 1.25rem;
+    }
+    .tttt{
+       font-size: 20px;
+    }
+
+header img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}    
+    #time-btn{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .time-li li{
+       color: green;
+    }
+    .blog{
+          font-size: 30px;
+        }
+    .coEdit{
+        font-size: 30px;
+    }
+    /*ここまでPCデザイン*/   
+    /* ここからスマホデザイン*/
+    @media screen and (max-width: 768px) {
+  .main-nav li {
+    margin: 10px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 10px;
+   }
+
+  .big-bg {
+    background-attachment: scroll;
+    min-height: 50vh;
+  }
+
+  .home-content {
+    margin-top: 5%;
+  }
+
+  .page-title {
+    font-size: 3rem;
+  }
+
+  .ppp {
+    font-size: 1rem; 
+    margin: 5px 0 20px;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #fff;
+  }
+
+  .fixed-nav {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .aka-about,
+  .tn,
+  .file,
+  .gamelist,
+  .site {
+    opacity: 1; 
+    transform: translateY(0);
+  }
+
+  .headtext {
+    background-color: #abff2f;
+    color: #1e90ff;
+    font-size: 2rem;
+   }
+
+  .foot {
+    height: auto;
+  }
+ #ce{
+     font-size: 15px;
+ }
+ .abtx{
+    font-size: 15px;       
+ }
+ .tttt{
+    font-size: 11px;       
+ }
+          #time-btn{
+            padding-left: 50px;
+            padding-right: 40px;
+          }
+      #time-li{
+          font-size: 5px;
+      }
+        .blog{
+          font-size: 15px;
+        }
+        
+}  
+    /*ここまでスマホデザイン*/
+     .home-content {
+  text-align: center;
+  margin-top: 10%;
+  background: linear-gradient(90deg, #1e90ff, #00bfff, #87cefa);
+  background-size: 200% 100%;
+  animation: gradientAnimation 4s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  padding: 40px;
+  border-radius: 10px;
+}
+    /*もろもろデザイン*/
