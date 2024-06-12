@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="中学生のプログラマー">
+    <title>Atsu1209</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="Atsu1209.png">
+    <link href= "https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"> </script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body class="body">
+<div class="fade-h">
+    <header>
+       <img  class="imgg" src="https://s3-ap-northeast-1.amazonaws.com/qiita-image-store/0/3374328/46bd0bf1f62fab1b9d2883c5439fef40b01b9590/x_large.png?1685413809">
+        <h1>Atsu1209</h1>
+        <p class="red-text" id="Brow"></p>
+
+        <ul class="main-nav">
+            <li class="top"><a class="black-text" href="https://atsu1209.github.io/home">Home</a></li>
+        </ul>
+    </header>
+    <div class="blog-main">
+      <h1 class="blog-title">CSSが苦手すぎる</h1>
+        <p class="blog-date">2024/5/30</p>
+        <p class="blog-text">こんにちはAtsu1209です。</p><p class="blog-text">今日は最近の悩みを書きたいと思います。</p><p class="blog-text">実は私CSSが大の苦手です というかデザインセンスがないため一人でやったら逆にすごいものができてしまいます。</p><p class="blog-text">そのためいつも友人に手伝ってもらっています  私が美術の授業で作った架空の商品ロゴを貼っておきます。</p><p class="blog-text"></p><p class="blog-text">誰かタスケテ(泣)</p>
+        <img class="happy"src="ハッピーターン.png">
+        <p class="blog-text" style="color: red;">※実際にある団体・企業・組織とは一切関係ありません</p>
+        <div><a class="btn turn-btn" href="https://atsu1209.github.io/home/blog"><p class="homebtn">ホームに戻る</p></a></div>
+        
+    </div>
+<div class="footer">
+    <footer class="foot">
+    <address>Copyright(C)2023-Atsu1209 All Rights Reserved.</address>
+        <p>Atsu1209-HomePage/Japan</p>
+     
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</footer>
+    </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+  
+  var userAgent = navigator.userAgent;
+
+  var targetBrowser = "Chrome";
+
+  if (userAgent.indexOf(targetBrowser) === -1) {
+      $("#Brow").html("Chrome以外のブラウザで開くと正しく動作しない場合があります");
+      alert("Chrome以外のブラウザで開くと 
+ 正しく動作しない場合があります")
+  }
+        
+function Copy(){
+
+   alert("Copyright(C)2023-Atsu1209 All Rights Reserved. 
+ 無断転載,改造,ソースコードのコピーを禁じる")
+    
+}
+           $(".top").hover(
+            function(){
+                $(".top").css("text-decoration","underline");
+            },
+            function(){
+                $(".top").css("text-decoration","none");
+            });       
+
+</script>
+<style>
+.happy{
+    height: 300px;
+    width: 300px;
+}
+.homebtn{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.blog-main {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.blog-date {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.blog-text {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.turn-btn {
+    display: inline-block;    
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.turn-btn:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #2f5167;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 2px solid #1e415a;
+}
+
+.footer p,
+.footer address {
+    margin-bottom: 10px;
+}
+
+.btn {
+    padding: 8px 8px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.red-text {
+    color: red;
+}
+
+.black-text {
+    color: #000;
+}
+
+.imgg {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+      header {
+    background-color: white;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+  .headtext{
+    background-color: #abff2f;
+    color: #1e90ff;
+  }
+
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  list-style: none; 
+  padding: 0;
+  width: 100%;
+  z-index: 1000;
+  text-align: center;
+}
+
+
+.main-nav li {
+  margin: 0 20px; 
+  text-align: center; 
+}
+
+</style>
+</html>
