@@ -26,6 +26,7 @@
             <li class="sili">リンク</li>
             <li class="tubu">ブログ</li>
             <li class="mess">お知らせ</li>
+            <li class="mine">MinecraftMods</li>
 
         </ul>
     </header>
@@ -51,14 +52,11 @@
 
     <div class="file">
         <h3 class="aboutback">配布物</h3>
-        <ul>
-
-            <li><a href="https://ux.getuploader.com/Atsufile/download/2" class="keylib" id="ce">キーボードライブラリ[Pass:Atk]</a></li>
-            <li><a href="https://ux.getuploader.com/Atsufile/download/1" class="comment" id="ce">コメント機能追加キット[Pass:Atc]</a></li>
-            <li><a href="" class="EventLib" id="ce">EventLib(Nav向け)[制作中]</a></li>
-            <li><a href="" class="scs" id="ce">スクロールスライドインキット[制作中]</a></li>
-
-        </ul>
+         <div class="box">
+                 <h1 class="blog-title">配布物</h1>
+                 <p class="blog-p">配布物です(別ページへ)</p>
+                 <a class="click-btn" href="https://atsu1209.github.io/home/mods">詳しく見る>></a>
+             </div>
     </div>
     <div class="gamelist">
     <h3 class="aboutback">制作物</h3>
@@ -95,8 +93,15 @@
     </a>
        </div>
       </div>
+    <div class="mods">
+        <h3 class="aboutback">MinecraftMods</h3>
+        <div class="box">
+                 <h1 class="blog-title">マイクラMod</h1>
+                 <p class="blog-p">マイクラmod作ってます(別ページ)へ</p>
+                 <a class="click-btn" href="https://atsu1209.github.io/home/mods">詳しく見る>></a>
+             </div>
+    </div>
      <div class="time-modal">
-
 
 
     <!-- Modal Structure -->
@@ -142,6 +147,7 @@
         <li>2024/2/2:タイムラインをお知らせに変更しました。</li>
         <li>2024/5/15:ブログページを一部更新しました。</li> 
         <li>2024/6/13:Homeの一部コードを修正</li>
+        <li>2024/6/25:配布物を別サイトへ移行</li>
     </div>
             </ul>
 
@@ -296,6 +302,13 @@ function Copy(){
             },
             function(){
                 $(".mess").css("text-decoration","none");
+            });
+        $(".mine").hover(
+            function(){
+                $(".mine").css("text-decoration","underline");
+            },
+            function(){
+                $(".mine").css("text-decoration","none");
             });
         $(".qiita").hover(
             function(){
@@ -462,6 +475,16 @@ function Copy(){
     var elementHeight = $(".imgg").outerHeight();
 
     var scrollTo = $(".imgg").offset().top - (windowHeight - elementHeight) / 2;
+
+    $("html, body").animate({
+        scrollTop: scrollTo
+    }, 1000);
+});
+         $(".mine").click(function() {
+    var windowHeight = $(window).height();
+    var elementHeight = $(".mods").outerHeight();
+
+    var scrollTo = $(".mods").offset().top - (windowHeight - elementHeight) / 2;
 
     $("html, body").animate({
         scrollTop: scrollTo
@@ -773,6 +796,9 @@ nav ul li a {
 }        
     .haihu{
     font-size: 1.25rem;
+    }
+    .mine{
+        font-size: 1.25rem;
     }
 
 .qiita{
