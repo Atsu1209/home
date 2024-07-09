@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Atsu1209｜File</title>
+    
+    <style>
+        .foot{
+            background-color: #2f5167;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #2f5167;
+            color: #fff;
+            height: 80px;
+            padding: 40px;
+        }
+
+        .margin{
+            margin-bottom: 10px;
+        }
+        
+        header {
+            background-color: white;
+            color: black;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 100px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .main-nav {
+            display: flex;
+            justify-content: center;
+            list-style: none; 
+            padding: 0;
+            width: 100%;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        .main-nav li {
+            margin: 0 20px; 
+            text-align: center; 
+        }
+
+        .top h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            z-index: 1;
+            font-size: 100px;
+            margin-top: 5px;
+            background-image: linear-gradient(45deg, #007bff, #00ffff); 
+            background-clip: text;
+            -webkit-background-clip: text; 
+            color: transparent;
+            animation: textGradientAnimation 5s infinite; 
+        }
+
+        .top {
+            position: relative;
+            text-align: center;
+        }
+
+        .top-img {
+            width: 100%;
+            height: auto;
+            z-index: 0;
+        }
+
+        .about {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 70px;
+        }
+        .lic {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 70px;
+        }
+
+        .bar {
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .card {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+
+        .card h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .card h4 {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .card a:hover {
+            color: #0056b3;
+        }
+
+        .blog, .lic {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .about, .blog, .lic {
+            opacity: 0; 
+            transform: translateY(100px); 
+            transition: opacity 0.5s, transform 0.5s; 
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                margin: 10px;
+                padding: 15px;
+            }
+        }
+
+        .terms-list {
+            text-align: left;
+            margin-left: 250px;
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .terms-list li {
+            margin-bottom: 10px;
+        }
+
+        .terms-list li:before {
+            content: "•";
+            color: #007bff;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h5>Atsu1209-File</h5>
+        <h3>Atsu1209</h3>
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="https://atsu1209.github.io/home/index.html">Home</a>
+                </li>    
+            </ul>
+        </nav>
+    </header>
+    <div class="top">
+        <h1>Atsu1209</h1>
+        <img class="top-img" src="back.png">
+    </div>
+    <div class="about">
+        <div class="bar">
+            <h2>About</h2>
+        </div>
+        <h2>Atsu1209の配布場所です</h2>
+        <h2 class="margin">変なものを色々配布してるので良かったら使ってください</h2>
+        <h2 class="margin">ちなみにCSSとかはブログから流用してます。なぜかって?</h2>
+        <h2 class="margin" style="color: red;">CSSが苦手だからだよ</h2>
+    </div>
+    <div class="lic">
+        <div class="bar">
+            <h2>利用規約</h2>
+        </div>
+        <ul class="terms-list">
+            <h2>1.定義</h2>
+            <li>1-1.本利用規約内で使用される「規約」は利用規約を指します。</li>
+            <li>1-2.本利用規約内で使用される「作者」は作者のAtsu1209を指します。</li>
+            <li>1-3.本利用規約内で使用される「作品」は作者の制作したモッド・ライブラリ(JavaSriptやHTMLのキット)などを指します。</li>
+            <li>1-4.本利用規約内で使用される「利用」は作品をダウンロードまたは使用することを指します。</li>
+            <li>1-5.本利用規約内で使用される「使用者」は作品をダウンロード・使用する者を指します。</li>
+            <li>1-6.本利用規約内で使用される「規約違反」は本利用規約にかかれている規約に違反したことを指します。</li>
+            <li>1-7.本利用規約内で使用される「SNS」はソーシャルメディア(X,Youtube等)を指します。</li>
+            <h2>2.利用上の責任について</h2>
+            <li>2-1.作品の使用により発生したいかなる問題についても、作者は責任を負いません。</li>
+            <li>2-2.利用者は本利用規約を読み、守る責任があります。</li>
+            <li>2-3.利用者が本利用規約を読まずに使用した場合も規約違反とします。</li>
+            <h2>3.利用規約の同意について</h2>
+            <li>3-1.作品をダウンロードした場合は利用規約に同意したとみなします。</li>
+            <li>3-2.規約違反が発生した場合は法的措置(著作権法などに基づく)を取ることがあります。</li>
+            <li>3-3.利用規約に同意できない場合は作品の利用を禁止とさせていただきます。</li>
+            <h2>4.利用規約の範囲について</h2>
+            <li>4-1.本利用規約の範囲は作者の作品すべてに適応されます。</li>
+            <h2>5.利用規約の変更について</h2>
+            <li>5-1.本利用規約は予告なしに変更されることがあります。</li>
+            <li>5-2.利用規約が更新された場合は更新前にダウンロードしたとしても更新後の規約を適用します。</li>
+            <li>5-3.利用規約の更新後はお知らせしますが、更新後の規約を読まずに使用した場合も2-3適応で違反とします。</li>
+            <h2>6.利用上の規約について</h2>
+            <li>6-1.作品の商用利用はいかなる場合でも禁止します。</li>
+            <li>6-2.作品の営利/非営利にかかわらず再配布はいかなる場合でも禁止します。</li>
+            <li>6-3.作品の改造はいかなる場合でも禁止します。</li>
+            <li>6-4.作品の自作発言(私が開発した等)を発見した場合は規約違反とします。</li>
+            <li>6-5.規約違反が発生した場合は作品の配布を停止することがあります。</li>
+            <li>6-6.作品の悪用や改造品の配布などはいかなる場合でも禁止します。</li>
+            <h2>7.動画などSNS関連の規約</h2>
+            <li>7-1.作品を使用した動画などをSNSへアップロードすることを許可します。</li>
+            <li>7-2.作品を使用した動画などをSNSをアップロードする際は、本配布サイトのURLの記載をしてください。</li>
+            <li>7-3.作品を使用した動画などをSNSをアップロードする際の作者への連絡は不要です</li>
+            <li>7-4.作品を使用した動画などの収益化を許可します。</li>
+            <h2>8.利用規約違反が発生した場合</h2>
+            <li>8-1.利用規約違反が発生・発覚した場合は作品の配布停止を行うことがあります</li>
+            <li>8-2.規約違反を行った者に対して、法的措置(著作権法などに基づく)を取ることがあります。</li>
+            <li>8-3.規約違反を行った者に対して、一切の作品の利用を禁止することがあります。</li>
+            <h2>要約</h2>
+            <li>規約ちゃんと読んで守ってね。 守れない場合は使わないでね。</li>
+            <li>作品によって生じた問題は一切責任は取らないよ。</li>
+            
+        </ul>
+        <div style="text-align: center; margin-top: 20px; margin-left: 25px;">
+        <input type="checkbox" id="agree" name="agree">
+        <label for="agree">利用規約に同意する</label>
+        <p style="color: red;">同意にチェックをつけた場合は規約を読み、同意したとみなします。</p>
+    </div>
+    </div>
+    <div class="blog">
+        <div class="bar">
+            <h2>MinecraftMods</h2>
+        </div>
+        <div class="card blog-made">
+            <h1 class="blog-title">HackRecipeMod(1.16.4)</h1>
+            <h5>MinecraftMods</h5>
+            <h4>チートレシピModです。 土からダイヤモンドができます。</h4>
+            <a class="download-link" href="https://atsu1209.github.io/home">ダウンロード>></a>
+        </div>
+         <div class="bar">
+            <h2>配布物</h2>
+        </div>
+        <div class="card blog-made">
+            <h1 class="blog-title">キーボードライブラリ</h1>
+            <h5>JavaScript</h5>
+             <h4>JavaScriptのキーボードライブラリです。Pass[Atk]</h4>
+            <a class="download-link" href="https://ux.getuploader.com/Atsufile/download/2">ダウンロード>></a>
+        </div>
+         <div class="card blog-made">
+        <h1 class="blog-title">コメント機能追加キット</h1>
+            <h5>JavaScript</h5>
+             <h4>自分のサイトにコメント機能(連絡機能)を追加できます。Pass[Atc]</h4>
+            <a class="download-link" href="https://ux.getuploader.com/Atsufile/download/1">ダウンロード>></a>
+    </div>
+         </div>
+    <div class="footer">
+        <footer class="foot">
+            <address>Copyright(C)2023-Atsu1209 All Rights Reserved.</address>
+            <p>Atsu1209-HomePage/Japan</p>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $('.download-link').css('pointer-events', 'none');
+                $('.download-link').css('color', 'gray');
+             $('#agree').change(function() {
+            if ($(this).is(':checked')) {
+                $('.download-link').css('pointer-events', 'auto');
+                $('.download-link').css('color', '#007bff');
+            } else {
+                $('.download-link').css('pointer-events', 'none');
+                $('.download-link').css('color', 'gray');
+            }
+        });
+    });
+        $(window).scroll(function() {
+            var element = $(".about");
+            var scrollPosition = $(window).scrollTop() + $(window).height();
+            var elementPosition = element.offset().top;
+            if (scrollPosition > elementPosition) {
+                element.css({
+                    "opacity": "1", 
+                    "transform": "translateY(0)" 
+                });
+            }
+            if (scrollPosition < elementPosition) {
+                element.css({
+                    "opacity": "0", 
+                    "transform": "translateY(100px)" 
+                });
+            }
+        });
+
+        $(window).scroll(function() {
+            var element = $(".blog");
+            var scrollPosition = $(window).scrollTop() + $(window).height();
+            var elementPosition = element.offset().top;
+            if (scrollPosition > elementPosition) {
+                element.css({
+                    "opacity": "1", 
+                    "transform": "translateY(0)" 
+                });
+            }
+            if (scrollPosition < elementPosition) {
+                element.css({
+                    "opacity": "0", 
+                    "transform": "translateY(100px)" 
+                });
+            }
+        });
+         $(window).scroll(function() {
+            var element = $(".lic");
+            var scrollPosition = $(window).scrollTop() + $(window).height();
+            var elementPosition = element.offset().top;
+            if (scrollPosition > elementPosition) {
+                element.css({
+                    "opacity": "1", 
+                    "transform": "translateY(0)" 
+                });
+            }
+            if (scrollPosition < elementPosition) {
+                element.css({
+                    "opacity": "0", 
+                    "transform": "translateY(100px)" 
+                });
+            }
+        });
+
+        $(document).ready(function() {
+            if ($(window).width() < 768) {
+                $(window).off('scroll');
+            }
+        });
+
+        var userAgent = navigator.userAgent;
+        var targetBrowser = "Chrome";
+        if (userAgent.indexOf(targetBrowser) === -1) {
+            alert("Chrome以外のブラウザで開くと \n 正しく動作しない場合があります")
+        }
+    </script>
+</body>
+</html>
