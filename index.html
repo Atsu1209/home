@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="中学生のプログラマー|Home">
+    <meta name="description" content="現役中学生の自称プログラマー">
     <title>Atsu1209</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -54,15 +54,17 @@
          <div class="box">
                  <h1 class="blog-title">配布物</h1>
                  <p class="blog-p">配布物です(別ページへ)</p>
-                 <a class="click-btn" href="https://atsu1209.github.io/home/file">詳しく見る>></a>
+                 <a class="click-btn" href="https://atsu1209.github.io/file">詳しく見る>></a>
              </div>
     </div>
     <div class="gamelist">
     <h3 class="aboutback">制作物</h3>
     <ul class="gamelist">
-        <li><a id="ce" href="https://atsu1209.github.io/home/math.html" class="math">電卓</a></li>
-        <li><a id="ce" href="https://atsu1209.github.io/home/timer.html" class="time">タイマー</a></li>
-        <li><a id="ce" href="" class="coEdit">カラーコード生成</a></li>
+        <div class="box">
+                 <h1 class="blog-title">制作物(Webアプリ)</h1>
+                 <p class="blog-p">制作物(別ページ)へ</p>
+                 <a class="click-btn" href="https://atsu1209.github.io/webapp">詳しく見る>></a>
+             </div>
     </ul>
 </div>
 
@@ -73,6 +75,7 @@
             <li><a id="ce" href="https://twitter.com/jp62527629" class="x">X(Twitter)</a></li>
                <li><a id="ce" href="https://replit.com/@219e220024" class="repl">Replit</a></li>
             <li><a id="ce" href="https://www.youtube.com/channel/UC1rGOncHQp-nb-lN7CaxhTQ/about" class="youtube">Youtube</a></li>
+            <li><a id="ce" href="https://stedtech-org.github.io/home" class="stedtech">StecTech HP</a></li>
         </ul>
     </div>
     <div class="tb">
@@ -141,6 +144,7 @@
         <li>2024/6/13:Homeの一部コードを修正</li>
         <li>2024/6/25:配布物を別サイトへ移行</li>
         <li>2024/8/21:一部JavaScriptコードを修正</li>
+        <li>2024/11/7:一部コードを修正 and GitHubを整理</li>
     </div>
             </ul>
 
@@ -215,6 +219,16 @@ function Copy(){
 
 
 
+        $(".stedtech").hover(
+            function(){
+
+                $(".stedtech").css("color","#191970");
+            },
+            function(){
+
+                $(".stedtech").css("color","#00bfff");
+            }
+        );      
         $(".youtube").hover(
             function(){
 
@@ -899,6 +913,9 @@ nav ul li a {
     transition: opacity 0.5s, transform 0.5s; 
     }
     .youtube{
+        font-size: 30px;
+    }
+    .stedtech{
         font-size: 30px;
     }
     .scs{
